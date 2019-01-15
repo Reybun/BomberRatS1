@@ -1,0 +1,31 @@
+<!DOCTYPE=html>
+
+<html>
+
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+<a href="/req_retour?pseudo={pseudo}"><img src="./images/but2_retour.png"/></a>
+<div class="grille_pa2">
+<form action ="req_jeuinter" method = "GET">
+<input type ="radio" name="act" value="disc" checked>Decouvrir une case!
+<input type ="radio" name="act" value="flag">Poser un drapeau!
+<input type="hidden" name="pseudo" value="{pseudo}">
+
+</br></br> {cptb} <img src="./images/bombe2.png"> restantes! </br></br>
+{lagrille}
+</form>
+
+<div class="lose">
+{lose} 
+</div>
+<div class="win">
+{win}
+</div>
+</div>
+
+</body>
+</html>
